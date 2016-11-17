@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="citytrans.xsl"?>
+<city id="001">
+	<name>shengyang</name>
+	<province>liaoning</province>
+	<longitude>90</longitude>
+	<latitude>60</latitude>
+	
+	<company id="SoftwareCompany001">
+		<name>IBM</name>
+		<employee>10000</employee>
+		<address>18th road</address>
+		<salary>10000</salary>
+		<praise desc="good">
+			<star>4</star>
+			<value>90</value>
+		</praise>
+	</company>
+	
+	<company id="SoftwareCompany002">
+		<name>Apple</name>
+		<employee>20000</employee>
+		<address>5th road</address>
+		<salary>20000</salary>
+		<praise desc="perfect">
+			<star>5</star>
+			<value>100</value>
+		</praise>
+	</company>
+	
+	<company id="SoftwareCompany003">
+		<name>Neusoft</name>
+		<employee>30000</employee>
+		<address>shiji road</address>
+		<salary>5000</salary>
+		<praise desc="normal">
+		<star>2</star>
+		<value>60</value>
+		</praise>
+	</company>
+	<degree value="5">
+		<desc>pretty city</desc>
+		<population>5000000</population>
+	</degree>
+</city>
