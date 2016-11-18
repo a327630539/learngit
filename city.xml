@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type="text/xsl" href="citytrans.xsl"?>
-<city id="011">
+<city id="f011">
 	<name>shengyang</name>
 	<province>liaoning</province>
 	<longitude>90</longitude>
