@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.w3school.com.cn" targetNamespace="http://www.w3school.com.cn" elementFormDefault="qualified">
+	<xs:element name="city">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string"/>
+				<xs:element name="province" type="xs:string"/>
+				<xs:element name="longitude" type="xs:integer"/>
+				<xs:element name="latitude" type="xs:integer"/>
+				<xs:element name="company" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name" type="xs:string"/>
+							<xs:element name="employee" type="xs:integer"/>
+							<xs:element name="address" type="xs:string"/>
+							<xs:element name="salary" type="xs:decimal"/>
+							<xs:element name="praise" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="star" type="xs:decimal"/>
+										<xs:element name="value" type="xs:decimal"/>
+									</xs:sequence>
+									<xs:attribute name="desc" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="id" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="degree">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="desc" type="xs:string"/>
+							<xs:element name="population" type="xs:integer"/>
+						</xs:sequence>
+						<xs:attribute name="value" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="id" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
